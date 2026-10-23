@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt hàng demo | Góc Kết Nối</title>
+</head>
+<body bgcolor="#F7FAFC">
+<header>
+  <table width="100%" bgcolor="#17344B" cellpadding="18" cellspacing="0" border="0">
+    <tr><td align="center"><h1><font color="#FFFFFF">GÓC KẾT NỐI</font></h1>
+      <p><font color="#E3F0F7">Phụ kiện gọn gàng cho góc học tập và làm việc</font></p>
+    </td></tr>
+  </table>
+</header>
+<nav aria-label="Điều hướng chính">
+  <table width="100%" bgcolor="#DEEDF3" border="0" cellpadding="12" cellspacing="0">
+    <tr align="center">
+      <td><a href="index.html">Trang chủ</a></td>
+      <td><a href="chi-tiet.html">Chi tiết</a></td>
+      <td><a href="bang-gia.html">Bảng giá</a></td>
+      <td><a href="dat-hang.html">Đặt hàng demo</a></td>
+      <td><a href="xac-nhan.html">Hướng dẫn demo</a></td>
+    </tr>
+  </table>
+</nav>
+<main>
+<section>
+<h2>Biểu mẫu yêu cầu đặt hàng (demo)</h2>
+<p>Đây là form tĩnh để thực hành các thẻ HTML. Không có hệ thống đặt hàng thật, không lưu đơn, không giao hàng và không thanh toán.</p>
+<p><strong>Chỉ nhập thông tin giả lập.</strong> Form sử dụng GET nên dữ liệu đã nhập có thể xuất hiện trên thanh địa chỉ. Không nhập số điện thoại, email hay dữ liệu nhạy cảm thật.</p>
+<form action="xac-nhan.html" method="get">
+  <fieldset>
+    <legend>Thông tin người đặt — dữ liệu thử</legend>
+    <p><label for="ho-ten">Họ và tên:</label><br>
+       <input type="text" id="ho-ten" name="ho_ten" size="48" required placeholder="Ví dụ: Nguyen Van A"></p>
+    <p><label for="email">Email thử:</label><br>
+       <input type="email" id="email" name="email" size="48" required placeholder="demo@example.com"></p>
+    <p><label for="dien-thoai">Số điện thoại thử:</label><br>
+       <input type="tel" id="dien-thoai" name="dien_thoai" size="25" required placeholder="0900000000"></p>
+  </fieldset>
+  <fieldset id="chon-san-pham">
+    <legend>Chọn sản phẩm</legend>
+    <p><label for="san-pham">Sản phẩm muốn tìm hiểu:</label><br>
+      <select id="san-pham" name="san_pham" required>
+        <option value="">-- Chọn một sản phẩm --</option>
+        <option value="PK01">PK01 — Bàn phím cơ Mini 68 (690.000 đ)</option>
+        <option value="PK02">PK02 — Chuột không dây Silent M2 (450.000 đ)</option>
+        <option value="PK03">PK03 — Bàn phím văn phòng K100 (350.000 đ)</option>
+        <option value="PK04">PK04 — Chuột có dây Click C1 (190.000 đ)</option>
+        <option value="PK05">PK05 — Hub USB-C 6 cổng H6 (790.000 đ)</option>
+        <option value="PK06">PK06 — Đầu chuyển USB-C sang HDMI (420.000 đ)</option>
+        <option value="PK07">PK07 — SSD di động Pocket 1TB (1.450.000 đ)</option>
+        <option value="PK08">PK08 — Giá đỡ laptop Fold S1 (550.000 đ)</option>
+        <option value="PK09">PK09 — Đế tản nhiệt CoolPad 15 (690.000 đ)</option>
+        <option value="PK10">PK10 — Túi chống sốc Sleeve 14 (320.000 đ)</option>
+      </select></p>
+    <p><label for="so-luong">Số lượng:</label><br>
+      <input type="number" id="so-luong" name="so_luong" min="1" max="10" value="1" required></p>
+    <p><label for="mau-sac">Màu sắc / phiên bản mong muốn:</label><br>
+      <select id="mau-sac" name="mau_phien_ban" required>
+        <option value="">-- Chọn một tùy chọn --</option>
+        <option value="den">Đen / Xám đậm</option>
+        <option value="trang">Trắng / Bạc</option>
+        <option value="xanh">Xanh than</option>
+        <option value="khac">Phiên bản khác (ghi chú)</option>
+      </select></p>
+    <p>Hình thức liên hệ mong muốn (chỉ minh họa):</p>
+    <p><input type="radio" id="lien-he-email" name="lien_he" value="email" checked>
+      <label for="lien-he-email">Email</label>
+      <input type="radio" id="lien-he-phone" name="lien_he" value="dien_thoai">
+      <label for="lien-he-phone">Điện thoại</label></p>
+    <p><label for="ghi-chu">Ghi chú:</label><br>
+      <textarea id="ghi-chu" name="ghi_chu" rows="4" cols="55" placeholder="Chỉ nhập thông tin minh họa"></textarea></p>
+  </fieldset>
+  <p><input type="checkbox" id="dong-y" name="dong_y_demo" value="co" required>
+     <label for="dong-y">Tôi hiểu đây chỉ là biểu mẫu mô phỏng và không tạo đơn hàng thật.</label></p>
+  <p><button type="submit">Gửi yêu cầu demo</button> <button type="reset">Nhập lại</button></p>
+</form>
+<p><a href="bang-gia.html">Xem lại bảng giá</a></p>
+</section>
+</main>
+<footer>
+  <hr>
+  <table width="100%" bgcolor="#17344B" cellpadding="14" cellspacing="0" border="0">
+    <tr><td align="center"><font color="#FFFFFF">Góc Kết Nối — Website thực hành HTML-only · Nội dung, hình ảnh và giá đều là dữ liệu minh họa.</font><p><a href="index.html"><font color="#FFFFFF">Về trang chủ</font></a></p></td></tr>
+  </table>
+</footer>
+</body>
+</html>
